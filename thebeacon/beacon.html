@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+        <title>markdown-warmup-html | the Beacon</title>
+    </head>
+    <body class="beacon">
+        <header>
+            <h1>Antwerpen <br>Lamarr</h1>
+                <nav>
+                    <ul>
+                            <li><a href="/index.html">start</a></li>
+                            <li><a href="https://becode.org/" target="_blank">BeCode</a></li>
+                            <li><a href="/thebeacon/beacon.html" class="active">The Beacon</a></li>
+                            <li><a href="/about/about.html">About</a></li>
+                    </ul> 
+                </nav>
+                <a href="#adres" class="btndown"><span class="fas fa-angle-double-down"></span></a>
+        </header>
+
+            <main>
+                <section id="adres" class="adres">  
+                    <h2>Adres</h2>
+                    <p>
+                        Je vindt ons terug op onderstaand adres: <br>
+                        <span>Sint-Pietersvliet 7, 2000 Antwerpen</span>
+                    </p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2498.6565010564823!2d4.398842415759636!3d51.22540317958978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3f6591c88f09d%3A0x31d6c38718baba03!2sThe+Beacon!5e0!3m2!1snl!2sbe!4v1545302140934" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </section>
+            </main>
+
+            <footer>
+                <p>© BeCode.org</p>
+            </footer>
+
+              <!-- JQuery -->
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+       
+    <!-- Scroll-to-Point :
+    https://stackoverflow.com/questions/7717527/smooth-scrolling-when-clicking-an-anchor-link/7717625 -->
+    <script>
+        $('a[href^="#"]').click(function(){
+            var the_id = $(this).attr("href");
+
+        $('html, body').animate({
+        scrollTop:$(the_id).offset().top
+        }, 'slow');
+
+            return false;});
+    </script>
+           
+            </script>
+        </div>
+    </body>
+</html>

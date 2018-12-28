@@ -1,0 +1,367 @@
+@import "UTF-8";
+@import "https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css";
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Monoton');
+
+
+/* -------------- GENERAL -------------------------------------------- */
+body { 
+    font: 400 100%/1.4 Poppins, Helvetica, sans-serif; 
+    overflow-x: hidden;
+}
+
+
+.bold { font-weight: bold; }
+.italic { font-style: italic; }
+
+p { 
+    color: #404040; 
+    margin: 0 20px 0 20px;
+}
+
+
+/* -------------- HEADER / NAV -------------------------------------------- */
+header {
+    height: 100vh;
+    background: rgb(201,246,255);
+    background: linear-gradient(0deg, rgba(201,246,255,1) 0%, rgba(255,201,233,1) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header h1 {
+    font: 300 100%/1.3 Monoton, Helvetica, sans-serif;
+    font-size: 3em;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px;
+}
+
+
+/* -------------- NAV -------------------------------------------- */
+nav ul {
+    height: 350px;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+    background: rgba(255,255,255, 0) ; 
+}
+
+nav ul a { 
+    width: 100%;    
+    display: block;
+    text-decoration: none; 
+    text-transform: uppercase;
+    color:  #404040;
+    font-size: 1.1em;
+    transition: all .3s ease-in;
+}
+
+nav ul a:hover {
+    letter-spacing: 5px;
+}     
+
+.active {
+    letter-spacing: 5px;
+    color: #404040;
+}
+
+
+/* -------------- BTNDOWN -------------------------------------------- */
+.btndown {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+}
+
+.btndown:hover { 
+    color: #404040;
+    transition: all .3s ease-in-out; 
+}
+
+.btndown span {font-size: 2em;}
+
+
+/* -------------- INTRO -------------------------------------------- */
+.intro { 
+    text-align: center;
+    background: rgb(201,246,255);   
+    background: linear-gradient(180deg, rgba(201,246,255,1) 0%, rgba(255,255,255,1) 100%);
+    padding: 10px;
+}
+
+.intro h2 { 
+    font: 300 100%/1.3 Monoton, Helvetica, sans-serif;
+    font-size: 3em;
+    text-transform: uppercase;
+    padding: 30px 0;
+}
+
+.intro img {
+    margin: 100px auto;
+    transition: transform .2s ease-in-out;
+    cursor: pointer;
+}
+
+.intro img:hover {
+    transform: scale(1.1);
+}
+
+/* -------------- LIST -------------------------------------------- */
+.list { padding: 10px;}
+
+.list h2 { 
+    font-size: 1.3em;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.items {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+.items label {
+    text-align: center;
+    position:relative;
+    width:300px;
+    background: #f8f8f8;
+    padding:30px;
+    margin: 10px;
+    border: 1px solid black;
+    background: linear-gradient(180deg, rgba(255,201,233,0.7) 0%, rgba(255,255,255,1) 100%);
+    transition: border 2s ease-in-out;
+    box-shadow: 5px 5px 10px #9f8282;
+ }
+
+ .items label:hover { background: linear-gradient(180deg, rgba(255,201,233,1) 0%, rgba(255,255,255,1) 100%); }
+
+ .items label:before { 
+    content:"";
+    position: absolute;
+    top: 10px;
+    bottom:10px;
+    left:10px;
+    right:10px;
+    border:1px solid black;
+    transition: all 500ms;
+ }
+
+ .items label:hover:before { 
+    top: 5px;
+    bottom:5px;
+    left:5px;
+    right:5px;
+    border: 1px solid black;
+ }
+
+
+ .items label:after {
+   content:"";
+   position: absolute;
+   top: 5px;
+   bottom:5px;
+   left:5px;
+   right: 5px;
+   border:1px solid black;
+ }
+
+/* -------------- CONTENT -------------------------------------------- */
+.content {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    margin-top: 60px;
+    background: rgb(201,246,255);   
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(201,246,255,1) 100%);
+}
+
+.content h2 {
+    font-size: 1.3em;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.middle img {
+    display: block;
+    margin: auto;
+    height: 100px;
+    padding: 20px 10px 40px 10px;
+}
+
+.middle {
+    margin: 5px 5px 30px 5px;
+    padding: 5px;
+    box-shadow: 5px 5px 4px #888888;
+    width: 250px;
+    transition: all .2s ease-in-out;
+}
+
+.middle:hover { transform: scale(0.9); }
+
+.javascript {
+    margin: 30px;
+}
+
+.javascript h2, 
+.php h2 {
+    padding-bottom: 10px;
+}
+
+.javascript h2::after,
+.php h2::after {
+    content:' ';
+    display: block;
+    margin: auto;
+    width: 20%;
+    height: 1px;
+    background-color: black;
+    margin-top: 30px;
+}
+
+.php {
+    margin: 30px;
+}
+
+/* ------ FOOTER --------------------------------------------- */
+
+footer {
+    background-color: rgb(201,246,255) ;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 20px 0;
+}
+
+/* ------ BACK TO TOP --------------------------------------------- */
+.back-to-top {
+    position: fixed;
+    bottom: 0;
+    right: auto;
+	padding: 1em;
+    z-index: 1000;
+    text-decoration: none;
+    color: white;
+}
+ 
+.back-to-top span { 
+    font-size: 2.3em; 
+    color: black;
+}
+
+.back-to-top span:hover {
+    color: #404040;
+    transition: all .3s ease-in-out;
+}
+
+
+/* ------ THE BEACON PAGE --------------------------------------------- */
+
+.adres {
+    background: rgba(201,246,255,1) ;
+    padding: 0 50px;
+}
+
+.adres h2 {
+    font-family: Poppins;
+    font-size: 2em;
+    text-transform: uppercase;
+    padding-top: 30px;
+}
+
+.adres p {
+     margin: 20px 0 20px 0;
+    }
+
+.adres p span { font-style: italic;}
+
+iframe {
+    margin: 30px 0;
+    width: 100%;
+}
+
+
+/* ------ MEDIA QUERIES --------------------------------------------- */
+@media screen and (min-width: 1000px) {
+    p { margin: 0; }
+
+    header {
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 40px 200px;
+        justify-content: space-between;
+        align-items: initial;
+        border-bottom: 1px solid black;
+    }
+
+    header h1 { text-align: left; }
+
+    nav ul {
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin: 0;
+    }
+
+    nav ul a { 
+        display: inline-block;
+        margin-right: 30px;
+    }
+
+    nav ul a:hover {
+        letter-spacing: 0;
+        font-weight: 500;
+    }
+
+    .active {
+        font-weight: 500;
+        letter-spacing: 0;
+    }
+    .btndown { display: none;}
+
+    .intro, .list, .content, .end, .adres { 
+        padding: 40px 200px; 
+    }
+
+    .media {
+        text-align: left;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        height: 100px;
+    }
+    
+    .intro h2 {
+        font-family: Poppins;
+        font-size: 2em;
+        text-align: left;
+        margin: 0;
+    }
+
+    .intro img { 
+        height: 150px; 
+        margin-left: 20px;
+    }
+
+    .list h2 { text-align: left;}
+
+    .end {
+        display: flex;
+        margin: 5px;
+        padding: 0;
+    }
+
+    .adres {
+    }
+}

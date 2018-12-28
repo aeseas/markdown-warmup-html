@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+        <title>markdown-warmup-html | home</title>
+    </head>
+    <body>
+        <header>
+            <h1>Antwerpen <br>Lamarr</h1>
+            <nav>
+                <ul>
+                    <li><a href="/index.html" class="active">start</a></li>
+                    <li><a href="https://becode.org/" target="_blank">BeCode</a></li>
+                    <li><a href="/thebeacon/beacon.html">The Beacon</a></li>
+                    <li><a href="/about/about.html">About</a></li>
+                </ul> 
+            </nav>
+            <a href="#intro" class="btndown"><span class="fas fa-angle-double-down"></span></a>
+        </header>
+
+        <main >
+            <section id="intro" class="intro">
+                <h2>Welkom</h2>
+                <div class="media">
+                    <p>Welkom op de pagina van de Startup Lamarr uit Antwerpen. Lorem ipsizzle dolizzle sit fo shizzle my nizzle, consectetuer adipiscing doggy. Nullizzle crazy bling bling, aliquet volutpizzle, suscipit quizzle, you son of a bizzle vel, fo shizzle.</p>
+                    <a href="https://becode.org/" target="_blank"><img src="images/logo_Becode.png" alt="logo BeCode"></a>
+                </div>
+            </section> <!-- END INTRO -->
+
+                <article class="list">
+                    <h2>Deze technologieën zijn we straks meester</h2>
+                    <div class="items">
+                        <label><input type="checkbox" checked="checked" disabled="disabled" class="regular-checkbox">GIT</label>
+                        <label><input type="checkbox" checked="checked" disabled="disabled" class="regular-checkbox">HTML</label>
+                        <label><input type="checkbox" checked="checked" disabled="disabled" class="regular-checkbox">CSS</label>
+                        <label><input type="checkbox" disabled="disabled">Javascript</label>
+                        <label><input type="checkbox" disabled="disabled">PHP</label>
+                    </div>
+                </article>
+            
+
+            <section class="content">
+                <article class="git middle">
+                    <img src="/images/git.jpg" alt="git logo">
+                    <h2>GIT</h2>
+                    <p>Kevin burgdoggen brisket cupim chuck bresaola kielbasa ham boudin. Shoulder cow beef ribs leberkas, buffalo capicola andouille tail kevin shankle prosciutto. Chuck cupim kielbasa, <span class="bold">hamburger</span> pork loin swine jerky.</p>
+                </article>
+
+                <article class="html middle">
+                    <img src="images/html.jpg" alt="html5 logo">
+                    <h2>HTML</h2>
+                    <p>Bacon ipsum dolor amet leberkas venison bresaola prosciutto. Capicola sirloin chuck cupim short loin burgdoggen ham hock salami ground round alcatra spare ribs. Swine cupim shank cow strip steak, beef ribs ham capicola kielbasa <span class="bold">doner</span> fatback. Porchetta corned beef flank tenderloin. </p>
+                </article>
+
+                <article class="css middle">
+                    <img src="images/css.png" alt="CSS3 logo">
+                    <h2>CSS</h2>
+                    <p><span class="bold">Turkey salami</span> pig chicken. Beef ribs tail pastrami frankfurter hamburger swine porchetta tongue tri-tip jowl landjaeger buffalo cupim. Ham hock shoulder venison sausage buffalo. Drumstick shank tri-tip, turducken swine fatback pork belly hamburger ground round pork loin spare ribs brisket ball tip.</p>
+                </article>
+
+                <div class="end">
+                    <article class="javascript">
+                        <h2>JavaScript</h2>
+                        <p><span class="italic">Tail shank shankle meatloaf</span class="italic">, drumstick bresaola chicken. Picanha short loin capicola biltong porchetta doner cupim hamburger turkey <span class="bold">kevin drumstick</span> beef ribs pastrami ham hock. Ball tip hamburger filet mignon brisket sausage t-bone shoulder drumstick shankle jerky landjaeger.</p>
+                    </article>
+
+                    <article class="php">
+                        <h2>PHP</h2>
+                        <p>Short loin tri-tip strip steak, tenderloin doner ham sirloin spare ribs cow. Ground round shoulder rump, leberkas <span class="bold">tongue salami</span> spare ribs beef cow alcatra bresaola picanha. Landjaeger meatball salami tri-tip flank. Shankle sausage capicola burgdoggen alcatra, fatback salami cupim frankfurter.</p>
+                        </section>
+                    </article>
+                </div>
+            </section> <!-- END CONTENT -->
+        </main>
+        <footer>
+            <p>© BeCode.org</p>
+        </footer>
+
+
+        <!-- JQuery -->
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+       
+    <!-- Scroll-to-Point :
+    https://stackoverflow.com/questions/7717527/smooth-scrolling-when-clicking-an-anchor-link/7717625 -->
+    <script>
+        $('a[href^="#"]').click(function(){
+            var the_id = $(this).attr("href");
+
+        $('html, body').animate({
+        scrollTop:$(the_id).offset().top
+        }, 'slow');
+
+            return false;});
+    </script>
+            <!-- Back-to-Top :
+    https://getflywheel.com/layout/add-sticky-back-top-button-website/
+    -->
+    <a href="#" class="back-to-top" style="display: inline;">
+            <span class="fa fa-arrow-circle-up"></span>
+        </a>
+        <script>
+                $(document).ready(function() {
+                    var offset = 250;
+                    var duration = 300;
+                    $(window).scroll(function() {
+                        if ($(this).scrollTop() > offset) {
+                            $('.back-to-top').fadeIn(duration);
+                        } else {
+                            $('.back-to-top').fadeOut(duration);
+                        }
+                    });
+                    $('.back-to-top').click(function(event) {
+                        event.preventDefault();
+                        $('html, body').animate({scrollTop: 0}, duration);
+                        return false;
+                    })
+                });
+            </script>
+    </body>
+</html>
