@@ -2,7 +2,7 @@
 assignment at BeCode.org <br>
 name assignment: `markdown-warmup-html`<br>
 
-First HTML exercise at BeCode.org. Make a website for our group 2018-2019 Lamarr.
+First HTML and CSS exercise at BeCode.org. Make a website for our group 2018-2019 Antwerp Lamarr.
 
 Link to site [here](https://aeseas.github.io/markdown-warmup-html/)
 
